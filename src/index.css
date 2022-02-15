@@ -1,13 +1,36 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* ************ HEADER ************* */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5rem 0.5rem;
+  background-color: aqua;
+}
+
+.header-title {
+  display: inline-block;
+  font-size: 4rem;
+}
+
+/* ************ SECTION ADD TODO ************* */
+
+.section-add-todo {
+  padding: 9.6rem 1rem;
 }
