@@ -34,3 +34,15 @@ header {
 .section-add-todo {
   padding: 9.6rem 1rem;
 }
+
+.section-todo-list {
+  font-size: 3.2rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.btn-completed {
+  color: green;
+}

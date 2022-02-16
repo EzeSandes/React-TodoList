@@ -8,7 +8,6 @@ const handleAddItem = (newTodo, todos, setTodos) => {
   };
 
   setTodos([...todos, newItem]);
-  console.log(todos);
 };
 
 export default handleAddItem;

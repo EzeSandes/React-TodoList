@@ -14,6 +14,7 @@ const AddItem = ({ newTodo, setNewTodo }) => {
       >
         <label htmlFor='add-todo' />
         <input
+          id='add-todo'
           type='text'
           placeholder='Add Todo'
           required
