@@ -1,0 +1,124 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --backg-color: #fff;
+  --color-text-default: #4f4f4f;
+  --btn-backg-color-full: #8a84e2;
+  --btn-backg-color-full--tint-1: #9690e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--color-text-default);
+  background-color: var(--backg-color);
+}
+
+.container {
+  max-width: 40rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+/* ******************* BTN *********************** */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.4rem 3.2rem;
+  border-radius: 4px;
+  border: none;
+  /* background-color: #8a84e2; */
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.btn-full--add-todo {
+  color: var(--backg-color);
+  background-color: var(--btn-backg-color-full);
+}
+
+.btn-full--add-todo:hover,
+.btn-full--add-todo:active {
+  background-color: var(--btn-backg-color-full--tint-1);
+}
+
+.todo .btn {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 3rem;
+
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.complete-btn {
+  color: var(--complete-color);
+}
+
+.trash-btn {
+  transition: all 0.4s;
+  color: var(--delete-color);
+}
+
+.trash-btn:hover {
+  background-color: var(--delete-color);
+  color: #fff;
+}
+
+.completed .complete-btn {
+  color: #fff;
+  background-color: var(--complete-color);
+}
+
+/* ****************** LIST ITEMS ********************** */
+
+.todo-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* ****************************************** */
+.completed {
+  text-decoration: line-through;
+}
+
+.completed-btn {
+  color: green;
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 114 / 132 
+
+-Font Weights
+Default: 400
+Semi-Bold: 600
+
+--- 02 Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 160 / 192 / 224 / 256
+
+*/

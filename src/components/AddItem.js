@@ -8,20 +8,24 @@ const AddItem = ({ newTodo, setNewTodo }) => {
   const { todos, setTodos } = useContext(TodosContext);
 
   return (
-    <section>
+    <section className='section-add-todo'>
       <form
+        className='form-add-todo'
         onSubmit={(e) => handleSubmit(e, newTodo, setNewTodo, todos, setTodos)}
       >
         <label htmlFor='add-todo' />
         <input
+          className='input-todo'
           id='add-todo'
           type='text'
-          placeholder='Add Todo'
+          placeholder='New Todo'
           required
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <button type='submit'>Add Todo</button>
+        <button className='btn btn-full btn-full--add-todo' type='submit'>
+          Add Todo
+        </button>
       </form>
     </section>
   );
